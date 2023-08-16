@@ -1,0 +1,952 @@
+.steps-container {
+	width: 100%;
+	padding-top: 13.7rem;
+}
+.med-step-roll-container {
+	max-width: 960px;
+	width: 90%;
+	margin: 0 auto;
+	background-color: map-get($map: $colors, $key: white);
+	box-shadow: 0px 20px 60px rgba(0, 129, 116, 0.1);
+	border-radius: 32px !important;
+	.wrapper {
+		width: 100%;
+	}
+	&.provision-welcome {
+		box-shadow: none;
+	}
+}
+.single-step {
+	width: 25%;
+	text-align: center;
+	position: relative;
+	float: left;
+	// a,a:visited{
+	// 	font-size: 16px;
+	// 	line-height: 28px;
+	// 	text-align: center;
+	// 	text-decoration-line: underline;
+	// 	color: map-get($map: $colors, $key: black70);
+	// }
+	&.active {
+		.step-number {
+			background-color: map-get($map: $colors, $key: teal);
+			border-color: map-get($map: $colors, $key: green);
+			span {
+				color: map-get($map: $colors, $key: white);
+			}
+		}
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		width: 140px;
+		height: 2px;
+		background-color: map-get($map: $colors, $key: green10);
+		top: 16px;
+		right: -70px;
+	}
+	&:nth-child(4) {
+		&:after {
+			display: none;
+		}
+		.step-number {
+			background-image: url(../img/black-tick-icon.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			span {
+				display: none;
+			}
+		}
+	}
+	&.active {
+		.step-number {
+			background-color: map-get($map: $colors, $key: teal);
+			background-image: url(../img/white-tick-icon.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			span {
+				display: none;
+			}
+		}
+	}
+}
+.form-link {
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	text-decoration: underline;
+	color: map-get($map: $colors, $key: black70);
+	display: inline-block;
+}
+.step-number {
+	position: relative;
+	width: 34px;
+	height: 34px;
+	border: 2px solid map-get($map: $colors, $key: black);
+	@include border-radius(50%);
+	margin: 0 auto 11px auto;
+	span {
+		color: map-get($map: $colors, $key: black);
+		width: 10px;
+		height: 14px;
+		font-size: 16px;
+		line-height: 18px;
+		@include font(ftpro, havy);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: auto;
+	}
+}
+.step-label {
+	font-size: 18px;
+	line-height: 28px;
+	color: map-get($map: $colors, $key: black);
+	span {
+		@include font(ftpro, med);
+	}
+}
+.steps-contact-container {
+	max-width: 344px;
+	width: 100%;
+	margin: 0 auto;
+
+	.header-contact {
+		margin-bottom: 2.4rem;
+		span {
+			padding-left: 23px;
+		}
+	}
+	.setps-contact-widget {
+		margin-bottom: 4.8rem;
+	}
+}
+footer.med-section {
+	.copyright {
+		color: map-get($map: $colors, $key: black70);
+		font-size: 18px;
+		line-height: 32px;
+		margin-bottom: 0;
+		text-align: center;
+	}
+}
+.cheakbox-container {
+	padding: 7.2rem 10rem;
+	width: 100%;
+
+	&.single-plans {
+		padding: 7.2rem 10rem 0 10rem;
+	}
+
+	h2 {
+		margin-bottom: 3rem;
+		@include font(ftpro, med);
+	}
+}
+label {
+	position: relative;
+	.tooltip-bar {
+		top: -2px;
+		right: -32px;
+	}
+}
+.cheakboxes {
+	margin-bottom: 7.2rem;
+	.single-widget {
+		width: 47.4%;
+		float: left;
+		margin-right: 5.2%;
+		position: relative;
+		margin-bottom: 34px;
+
+		h5 {
+			margin-bottom: 2rem;
+		}
+		&:nth-child(2) {
+			margin-right: 0;
+		}
+	}
+}
+
+.form-button-area {
+	button {
+		margin-bottom: 38px;
+	}
+}
+
+.form-button-area {
+	span {
+		display: block;
+		font-size: 18px;
+		line-height: 32px;
+		color: map-get($map: $colors, $key: black70);
+	}
+}
+a.toggle.single-plans {
+	float: none;
+	padding: 3.2rem 0;
+}
+.single-plans {
+	padding: 7.2rem 0 0 0;
+	border-top: 1px solid map-get($map: $colors, $key: green20);
+	background-color: #f7fbfb;
+	display: inline-block;
+	margin-bottom: 0;
+	width: 100%;
+	float: left;
+	h4 {
+		margin-bottom: 0;
+		color: map-get($map: $colors, $key: black25);
+	}
+	&:nth-child() {
+		border-top: none;
+	}
+}
+.plan-option-container {
+	width: 100%;
+}
+.change-your-utility {
+	display: table;
+	width: 100%;
+	padding: 38px 10rem;
+	vertical-align: middle;
+	background-color: map-get($map: $colors, $key: green03);
+	border-bottom: 1px solid map-get($map: $colors, $key: green20);
+}
+.utility-about-text {
+	width: 40%;
+	display: table-cell;
+	vertical-align: middle;
+	h5 {
+		margin: 0;
+	}
+	p {
+		margin: 0;
+	}
+}
+.change-utility {
+	width: 20%;
+	display: table-cell;
+	text-align: right;
+}
+.plan-option-overview {
+	padding: 0 10rem 7.2rem 10rem;
+	h2 {
+		margin-bottom: 3rem;
+		@include font(ftpro, med);
+	}
+	.state-cta-right {
+		width: 470px;
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 3.8rem;
+	}
+	.cta-newsletter {
+		width: 100%;
+		float: none;
+	}
+}
+.slide-toggle {
+	cursor: pointer;
+}
+.steps-welcome-container {
+	padding: 72px 10rem 18rem 10rem;
+	position: relative;
+	background-image: url(../img/steps-footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	border-radius: 32px;
+	box-shadow: 0px 20px 60px rgba(0, 129, 116, 0.1);
+	.button-bar {
+		margin-bottom: 7.2rem;
+	}
+}
+.steps-head {
+	margin-bottom: 4.8rem;
+	h2 {
+		margin-bottom: 0;
+		@include font(ftpro, med);
+	}
+	h4 {
+		margin-bottom: 0;
+		@include font(ftpro, med);
+	}
+}
+.join-steps-image {
+	margin-bottom: 4.8rem;
+}
+.steps-notice-list {
+	padding: 0 10rem;
+	margin-bottom: 7.2rem;
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			font-size: 20px;
+			line-height: 36px;
+			color: map-get($map: $colors, $key: black70);
+		}
+	}
+}
+.steps-address-container {
+	padding: 7.2rem 10rem;
+	h2 {
+		@include font(ftpro, med);
+		margin-bottom: 24px;
+	}
+	.join-two-plans {
+		margin: 0 auto 38px auto;
+		position: relative;
+		width: 80%;
+		max-width: 400px;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 400px;
+			height: 70px;
+			background-image: url(../img/join-plan.svg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-position: center top;
+		}
+		img {
+			max-width: 30%;
+		}
+	}
+}
+.steps-form {
+	.checkbox {
+		position: relative;
+		margin-bottom: 3.8rem;
+		padding-left: 40px;
+		label {
+			position: relative;
+			padding-left: 0;
+			@include font(open, reg);
+			color: map-get($map: $colors, $key: black70);
+			font-size: 18px;
+			line-height: 32px;
+		}
+	}
+}
+.slide-toggle.desktop-hide {
+	display: none !important;
+}
+
+.select-state {
+	width: 48%;
+	display: inline-block;
+	margin-right: 2.5%;
+	select {
+		max-width: 220px;
+	}
+	label {
+		display: block;
+	}
+}
+
+.zip-code {
+	width: 26%;
+	display: inline-block;
+}
+
+.form-about-text {
+	margin-bottom: 4.8rem;
+	p {
+		font-size: 18px;
+		line-height: 32px;
+		color: map-get($map: $colors, $key: black50);
+	}
+}
+.steps-form-w-sidebar {
+	width: 100%;
+}
+.steps-with-sidebar {
+	width: 34%;
+	float: right;
+	background-color: map-get($map: $colors, $key: green06);
+	padding: 30px 38px 0 38px;
+	border: 1px solid map-get($map: $colors, $key: green20);
+	box-sizing: border-box;
+	border-radius: 12px;
+}
+.title-sidebar {
+	@include font(ftpro, med);
+	color: map-get($map: $colors, $key: black);
+	margin-bottom: 2.4rem;
+	font-size: 14px;
+	line-height: 16px;
+}
+.sidebar-image {
+	width: 184px;
+	height: 101px;
+	position: relative;
+	background: #ffffff;
+	@include border-radius(12px);
+	margin-bottom: 2.4rem;
+	padding: 29px 30px;
+	display: table;
+	border: 6px solid map-get($map: $colors, $key: lnr-gr);
+	span {
+		display: table-cell;
+		line-height: 1;
+		vertical-align: middle;
+	}
+}
+.content-form-sidebar {
+	h6 {
+		margin-bottom: 1.2rem;
+	}
+	p {
+		color: map-get($map: $colors, $key: black70);
+		font-size: 16px;
+		line-height: 28px;
+		padding: 0 5px;
+		&:last-child {
+			margin-bottom: 16px;
+		}
+	}
+	.button-bar {
+		margin-bottom: 30px;
+	}
+}
+.sidebar-footer {
+	img {
+		position: relative;
+		bottom: -13px;
+	}
+}
+.steps-form {
+	width: 61%;
+	float: left;
+	margin-right: 5%;
+	form {
+		label {
+			color: map-get($map: $colors, $key: black);
+			@include font(ftpro, med);
+			font-size: 18px;
+			line-height: 1;
+			margin-bottom: 8px;
+		}
+	}
+	.button-bar {
+		margin-bottom: 7.2rem;
+	}
+}
+ul.accordion {
+	border-radius: 32px;
+	li {
+		margin-bottom: 0;
+		&:first-child {
+			a.accordion-trigger {
+				border-radius: 32px 32px 0 0;
+				border-top: 0;
+				&.accordion-open {
+					display: none;
+				}
+			}
+			.single-plans {
+				border: none;
+				border-radius: 32px 32px 0 0;
+			}
+		}
+		&:nth-child(3n + 3) {
+			a.accordion-trigger {
+				border-radius: 0 0 32px 32px;
+				&.accordion-open {
+					border-radius: 0;
+				}
+			}
+			.accordion-collapse {
+				border-radius: 0 0 32px 32px;
+			}
+		}
+		li {
+			margin-bottom: 10px;
+		}
+	}
+	.inner {
+		display: none;
+		background-color: map-get($map: $colors, $key: white);
+	}
+	li:nth-child(1) {
+		.inner {
+			display: block;
+		}
+	}
+	.toggle {
+		&:active {
+			.cheakbox-container {
+			}
+		}
+	}
+}
+a.toggle.single-plans.accordion-trigger.accordion-open {
+	display: none;
+}
+.utility-name-account {
+	position: relative;
+	width: 100%;
+	input[type="text"] {
+		max-width: 360px;
+		margin-right: 12px;
+		float: left;
+		&::placeholder {
+			color: map-get($map: $colors, $key: black);
+			font-size: 18px;
+			line-height: 20px;
+		}
+	}
+	span {
+		width: 30%;
+		max-width: 84px;
+		float: right;
+		position: absolute;
+		top: 38px;
+		height: 54px;
+		border: 1px solid map-get($map: $colors, $key: teal);
+		border-radius: 6px;
+		right: 0;
+		img {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			max-width: 65px;
+		}
+	}
+}
+.why-provision {
+	padding-top: 38px;
+	text-align: left;
+	border-top: 1px solid map-get($map: $colors, $key: black10);
+	padding-top: 39px;
+	.checklist ul,
+	.bullet-list ul {
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+	h4 {
+		color: map-get($map: $colors, $key: black);
+	}
+}
+
+.steps-form-with-faqs {
+	text-align: left;
+	margin-bottom: 3.8rem;
+	padding-top: 38px;
+	border-top: 1px solid rgba(16, 16, 16, 0.1);
+
+	h4 {
+		color: map-get($map: $colors, $key: black);
+		margin-bottom: 24px;
+	}
+	.faqs-area {
+		padding-top: 0;
+		.faq {
+			a,
+			a:visited {
+				display: block;
+				border: none;
+				padding: 0 0 1.2rem 4.6rem;
+				font-size: 20px;
+				line-height: 36px;
+				color: map-get($colors, black70);
+				@include font(ftpro, med);
+				position: relative;
+				cursor: pointer;
+				&:after {
+					content: "";
+					background-image: url(../img/plus-icon-green.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+					position: absolute;
+					left: 0;
+					top: 6px;
+				}
+				&:hover {
+					color: map-get($colors, black);
+				}
+
+				&.active {
+					padding-bottom: 2rem;
+					color: map-get($colors, black);
+
+					&:hover {
+						background-color: transparent;
+					}
+
+					&:after {
+						transform: rotate(45deg);
+					}
+				}
+
+				&:last-child {
+					border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+				}
+			}
+			.faq-content {
+				padding-left: 4.6rem;
+			}
+		}
+	}
+}
+.steps-widgets-two {
+	width: 100%;
+	margin-bottom: 48px;
+}
+.single-step-widget {
+	width: 47%;
+	float: left;
+	margin-right: 6%;
+
+	.widget {
+		border: 1px solid map-get($map: $colors, $key: green20);
+		background-color: map-get($map: $colors, $key: green06);
+		margin-bottom: 13px;
+		border-radius: 20px;
+	}
+	.button-bar {
+		margin-bottom: 30px;
+		span {
+			font-size: 14px;
+			line-height: 26px;
+			display: block;
+			color: map-get($map: $colors, $key: black70);
+			margin-top: 8px;
+		}
+	}
+	&:nth-child(2) {
+		margin-right: 0;
+	}
+	.step-widget-inner {
+		padding: 0 30px 0 30px;
+		position: relative;
+		h2.doration {
+			font-size: 36px;
+			line-height: 54px;
+			@include font(ftpro, havy);
+			margin-bottom: 6px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 28px;
+			margin-bottom: 3rem;
+		}
+	}
+
+	.widget.selected {
+		background-color: transparent !important;
+		border: 2px solid map-get($map: $colors, $key: teal) !important;
+		box-shadow: 0px 12px 32px rgba(0, 129, 116, 0.15) !important;
+		.form-green-btn {
+			background-color: map-get($map: $colors, $key: teal) !important;
+			border: 2px solid map-get($map: $colors, $key: teal) !important;
+			&:hover {
+				background-color: #008174 !important;
+				border: 2px solid #008174 !important;
+			}
+		}
+	}
+}
+
+.trade-mark {
+	margin-bottom: 0;
+	padding-top: 50px;
+}
+.popular-plans {
+	padding: 8px 24px;
+	background-color: map-get($map: $colors, $key: teal);
+	color: map-get($map: $colors, $key: white);
+	font-size: 14px;
+	line-height: 16px;
+	@include font(ftpro, havy);
+	border-radius: 20px;
+	position: absolute;
+	top: -16px;
+	left: 0;
+	right: 0;
+	max-width: 216px;
+	width: 100%;
+	margin: auto;
+}
+.price-bar-area {
+	padding: 0 58px;
+	position: relative;
+}
+.price-area {
+	margin-bottom: 39px;
+	background-image: url(../img/count-image-steps.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	padding: 12px 30px;
+	height: 158px;
+	width: 243px;
+	position: relative;
+	display: table;
+	.inner-area {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	h6 {
+		font-size: 18px;
+		line-height: 1;
+		margin-bottom: 0px;
+		span {
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				background-color: rgba(16, 16, 16, 0.5);
+				height: 2px;
+				display: block;
+				width: 110%;
+				left: -2px;
+				top: 7px;
+			}
+		}
+		&.light {
+			@include font(ftpro, med);
+		}
+	}
+	h2 {
+		font-size: 48px;
+		line-height: 1;
+		@include font(ftpro, havy);
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+}
+.discount-bar {
+	position: absolute;
+	width: 63px;
+	height: 63px;
+	left: -32.5px;
+	top: 41px;
+	font-size: 11px;
+	line-height: 14px;
+	color: map-get($map: $colors, $key: white);
+	background-color: map-get($map: $colors, $key: red);
+	transform: rotate(-6deg);
+	padding: 11px 5px;
+	box-shadow: 0px 6px 24px -6px red;
+	@include font(ftpro, havy);
+	@include border-radius(50px);
+}
+.tooltip-bar {
+	position: absolute;
+	top: 45%;
+	right: 20%;
+	.tooltip-inner {
+		position: relative;
+		width: 20px;
+		height: 20px;
+		border: 1px solid map-get($map: $colors, $key: green);
+		border-radius: 10px;
+		cursor: pointer;
+		display: inline-block;
+		.tooltip {
+			background-image: url(../img/green-tooltip.svg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center center;
+			width: 6px;
+			height: 12px;
+			position: absolute;
+			display: inline-block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	}
+}
+.tooltip-content {
+	width: 365px;
+	background-color: map-get($map: $colors, $key: white) !important;
+	color: black;
+	padding: 29px 30px;
+	display: none;
+	z-index: 100;
+	position: absolute;
+	left: calc(50% - 182px);
+	top: 28px;
+	border-radius: 12px;
+	border: 1px solid map-get($map: $colors, $key: black10);
+	box-shadow: 0px 15px 45px rgba(29, 54, 51, 0.1);
+	h5 {
+		margin-bottom: 12px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 28px;
+		text-align: left;
+		color: map-get($map: $colors, $key: black70);
+		margin-bottom: 0;
+	}
+	&:before {
+		content: "";
+		width: 1px;
+		height: 17px;
+		position: absolute;
+		top: -14px;
+		left: 0px;
+		right: 0;
+		margin: auto;
+		border-left: 14px solid transparent;
+		border-right: 14px solid transparent;
+		border-bottom: 14px solid #ffffff;
+		-webkit-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+	}
+}
+.about-tress {
+	width: 97%;
+	margin: 0 auto 5px auto;
+	img {
+		position: relative;
+		top: 12px;
+	}
+	.garranty {
+		padding: 10px 70px;
+		background: #44c0bb;
+		border: 1px solid map-get($map: $colors, $key: black15);
+		box-sizing: border-box;
+		position: relative;
+		border-radius: 4px 4px 16px 16px;
+		p {
+			color: map-get($map: $colors, $key: white);
+			font-size: 20px;
+			line-height: 30px;
+			margin: 0;
+			@include font(ftpro, havy);
+		}
+		.tooltip-content {
+			top: 70px;
+			&:before {
+				left: auto;
+				right: 24px;
+			}
+			p {
+				@include font(open, reg);
+				font-size: 16px;
+				line-height: 28px;
+				text-align: left;
+				color: rgba(16, 16, 16, 0.7);
+				margin-bottom: 0;
+			}
+		}
+		.tooltip-bar {
+			top: 40%;
+			right: 5%;
+		}
+		.tooltip-inner {
+			border: 1px solid #ffffff;
+			opacity: 0.7;
+			span {
+				cursor: pointer;
+			}
+		}
+		.tooltip {
+			background-image: url(../img/white-tooltip.svg);
+		}
+	}
+}
+.price-bar-area {
+	.tooltip-content {
+		top: 90px;
+		&:before {
+			left: auto;
+			right: 102px;
+		}
+	}
+}
+.more-links {
+	margin-bottom: 7.2rem;
+	a,
+	a:visited {
+		margin-bottom: 3rem;
+	}
+	p {
+		font-size: 18px;
+		line-height: 32px;
+		a,
+		a:visited {
+			color: map-get($map: $colors, $key: black70);
+			text-decoration: underline;
+		}
+	}
+}
+.image-with-links {
+	display: table;
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 3rem;
+	.link-image {
+		display: table-cell;
+		width: 30%;
+		vertical-align: middle;
+		line-height: 1;
+	}
+	.need-help {
+		display: table-cell;
+		width: 70%;
+		vertical-align: middle;
+		padding-left: 12px;
+		h4 {
+			color: map-get($map: $colors, $key: black);
+			@include font(ftpro, med);
+		}
+	}
+}
+
+/****
+**  	Steps type Checkbox
+****/
+
+.utility-content {
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+.steps-form-w-sidebar {
+	.steps-form {
+		label {
+			.tooltip-bar .tooltip-inner {
+				border: 1px solid map-get($map: $colors, $key: black50);
+				.tooltip {
+					background-image: url(../img/black-tooltip.svg);
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+	input[type="text"],
+	input[type="password"],
+	input[type="search"],
+	input[type="email"],
+	input[type="url"],
+	input[type="tel"],
+	input[type="number"],
+	input[type="date"],
+	input[type="file"],
+	input[type="range"] {
+		width: 360px;
+		margin-right: 9.8rem;
+	}
+}

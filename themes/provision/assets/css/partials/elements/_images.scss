@@ -1,0 +1,32 @@
+.feature-image {
+	width: 100%;
+	text-align: center;
+	border-radius: 0px 0px 96px 0px;
+	line-height: 1;
+	height: 460px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+img {
+	height: auto;
+}
+
+a {
+	img {
+		border: none;
+		outline: none;
+		margin-bottom: 0;
+	}
+}
+
+figure {
+	margin: 1.6rem 0;
+}
+
+figcaption {
+	@include font(open, reg);
+	@include font-size(1.8);
+	margin: 0;
+}

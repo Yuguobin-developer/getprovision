@@ -1,0 +1,45 @@
+Plan Block,Utility,Rate Type,Plan Name,Benefit 1,Benefit 2,Regular Price,Price,Discount %,Unit,Benefit 3,Benefit 4,Benefit 5,T&C Link
+A,AEP:CSP,Flat Rate,Unllimited,One price for unlimited use,Rate changes every 12 months,,79.99,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,AEP:CSP,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.0769,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+B,AEP:CSP,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.052,0.04,30%,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,AEP:OPCO,Flat Rate,Unllimited,One price for unlimited use,Rate changes every 12 months,,79.99,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,AEP:OPCO,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.0769,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,AEP:OPCO,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.052,0.04,30%,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,CMS,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,4.75,,Mcf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,CMS,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,3.107,2.39,30%,Mcf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,COH,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.259,0.199,30%,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,COH,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.539,,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,CPA,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,4.99,,DTH,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,CPA,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,2.587,1.99,30%,DTH,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DEO,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,2.197,1.69,30%,Mcf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DEO,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,4.64,,Mcf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DPL,Flat Rate,Unllimited,One price for unlimited use,Rate changes every 12 months,,69.99,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DPL,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.052,0.04,30%,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DPL,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.0725,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DTE,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.259,0.199,30%,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DTE,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.479,,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DUKE:G,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.499,,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DUKE:G,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.259,0.199,30%,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DUKE:P,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.052,0.04,30%,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DUKE:P,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.0759,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,DUKE:P,Flat Rate,Unllimited,One price for unlimited use,Rate changes every 12 months,,79.99,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,FE:CEI,Flat Rate,Unllimited,One price for unlimited use,Rate changes every 12 months,,64.99,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,FE:CEI,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.052,0.04,30%,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,FE:CEI,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.0759,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,FE:OE,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.052,0.04,30%,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,FE:OE,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.0759,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,FE:OE,Flat Rate,Unllimited,One price for unlimited use,Rate changes every 12 months,,64.99,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,FE:TE,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.052,0.04,30%,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,FE:TE,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.0759,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,FE:TE,Flat Rate,Unllimited,One price for unlimited use,Rate changes every 12 months,,64.99,,kWh,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,MGU,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.233,0.179,30%,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,MGU,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.479,,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,PECO,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.559,,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,PECO,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.519,0.399,30%,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,PGE,Flat Rate,Unllimited,One price for unlimited use,Rate changes every 12 months,,29.99,,Therm,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,PGW,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.559,,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,PGW,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.493,0.379,30%,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,SEMCO,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.479,,Therm,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,SEMCO,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.233,0.179,30%,Therm,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,VEDO,First Month Variable Rate,Month-to-Month,Pay only for what you use,Rate changes monthly,0.259,0.199,30%,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#
+,VEDO,Fixed Rate,Annual,Pay only for what you use,Rate changes every 12 months,,0.499,,Ccf,No Cancellation Fees,This Plan Plants Trees,100% Carbon Offset,https://www.provisionpg.com/#

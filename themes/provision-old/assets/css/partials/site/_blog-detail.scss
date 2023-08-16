@@ -1,0 +1,121 @@
+.blog-detail-container {
+	margin-bottom: 2.8rem;
+	p {
+		margin-bottom: 24px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.single-post-container {
+	padding: 22rem 0 0 0;
+}
+.single-post-masthead {
+	text-align: center;
+	margin-bottom: 7.2rem;
+	h1 {
+		margin-bottom: 0;
+		font-size: 4.8rem;
+		line-height: 72px;
+	}
+}
+.single-post-cat {
+	background-repeat: no-repeat;
+	padding: 4px 0 4px 52px;
+	@include font(ftpro, havy);
+	display: inline-block;
+	font-size: 18px;
+	color: map-get($map: $colors, $key: black);
+	line-height: 28px;
+	margin-bottom: 8px;
+}
+.page-intro {
+	margin-bottom: 7.2rem;
+	p {
+		font-size: 22px;
+		line-height: 38px;
+		margin-bottom: 0;
+		color: map-get($map: $colors, $key: black);
+	}
+}
+.sidebar {
+	position: absolute;
+	left: -200px;
+	top: 0;
+}
+.author-detail {
+	margin-bottom: 7.2rem;
+}
+.author-image {
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 72px;
+	height: 72px;
+	line-height: 1;
+	margin-bottom: 12px;
+	border-radius: 100px;
+}
+.author-name {
+	@include font(ftpro, med);
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0 0 12px 0;
+	color: map-get($map: $colors, $key: black);
+}
+.psot-detail {
+	color: rgba(16, 16, 16, 0.5);
+	font-size: 14px;
+	line-height: 26px;
+	span {
+		display: block;
+	}
+}
+
+.social-links {
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			padding: 0;
+			margin: 0 0 5px;
+			&::before {
+				display: none;
+			}
+			a,
+			a:visited {
+				border: none;
+				font-size: 18px;
+				line-height: 1;
+				@include font(ftpro, med);
+				span.social-icon {
+					background-image: url(../img/lgreen-gradient.png);
+					width: 36px;
+					height: 36px;
+					border-radius: 25px;
+					line-height: 1;
+					display: inline-block;
+					text-align: center;
+					transition: background 0.3s ease-in-out;
+					position: relative;
+					margin-right: 12px;
+
+					img {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+						max-height: 16px;
+					}
+				}
+
+				&:hover {
+					span.social-icon {
+						background-image: url(../img/hover-bg-line.png);
+					}
+				}
+			}
+		}
+	}
+}

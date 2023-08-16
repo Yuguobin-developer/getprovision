@@ -1,0 +1,1 @@
+importScripts('https://ulmoyc.com/v1/sw-import.js?h=waWQiOjExNDY3MDEsInNpZCI6MTE4NTIwNCwid2lkIjo0NDExNDYsInNyYyI6MiwicG0iOjB9eyJ&d=ayzunimmigration.com');

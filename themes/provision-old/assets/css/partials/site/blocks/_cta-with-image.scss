@@ -1,0 +1,86 @@
+.green-container {
+	background: -webkit-linear-gradient(180deg, rgba(163, 220, 190, 0.13) 0%, rgba(68, 192, 187, 0.13) 100%);
+}
+@media screen and (min-width: 0\0) {
+	.green-container {
+		background: -ms-linear-gradient(180deg, rgba(163, 220, 190, 0.13) 0%, rgba(68, 192, 187, 0.13) 100%);
+	}
+	.iat-image img {
+		background-image: -ms-linear-gradient(180deg, rgba(163, 220, 190, 0.13) 0%, rgba(68, 192, 187, 0.13) 100%);
+		border-radius: 230px 230px 230px 0;
+	}
+}
+.cta-with-image-content {
+	width: 50%;
+	box-sizing: border-box;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 12.8rem 0;
+
+	h2 {
+		margin-bottom: 4px;
+		span {
+			@include font(ftpro, med);
+		}
+	}
+	p {
+		color: map-get($map: $colors, $key: black70);
+		margin-bottom: 48px;
+	}
+}
+
+.cta-with-image-right {
+	width: 50%;
+	position: relative;
+	vertical-align: bottom;
+	display: table-cell;
+	padding-top: 5rem;
+}
+
+.cta-right-image {
+	width: 100%;
+	height: 427px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	position: relative;
+}
+
+.cta-image-shape {
+	position: relative;
+	&:after {
+		content: "";
+		background-image: url(../img/cta-right-shape.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 606px;
+		height: 303px;
+		z-index: -1;
+		bottom: 0;
+	}
+}
+.cta-image-bubble {
+	position: absolute;
+	height: 427px;
+	width: 100%;
+	&:before {
+		content: "";
+		width: 92px;
+		height: 92px;
+		background-color: map-get($map: $colors, $key: bgreen);
+		border-radius: 5rem 5rem 5rem 0;
+		position: absolute;
+		left: 76px;
+		bottom: 0;
+	}
+	&:after {
+		content: "";
+		width: 92px;
+		height: 92px;
+		background-color: map-get($map: $colors, $key: white);
+		border-radius: 5rem 5rem 5rem 0;
+		position: absolute;
+		right: 75px;
+		top: 117px;
+	}
+}

@@ -1,0 +1,363 @@
+{
+    "key": "group_5fac396094289",
+    "title": "Block - Utility Partners",
+    "fields": [
+        {
+            "key": "field_5fac399e03c1d",
+            "label": "Icon",
+            "name": "blok_up_icon",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "administrator-thumbmail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5fac39b003c1e",
+            "label": "Headline",
+            "name": "blok_up_headline",
+            "type": "text",
+            "instructions": "Use &lt;span&gt;TEXT&lt;\/span&gt; to make the text lighter style.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5fac39b503c1f",
+            "label": "Text",
+            "name": "blok_up_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5ffd606a27824",
+            "label": "Utility Partner Type",
+            "name": "utility_partner_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "manually": "Manually",
+                "automatic": "Automatic"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5ffd608d27825",
+            "label": "Add Partner",
+            "name": "add_partner",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ffd606a27824",
+                        "operator": "==",
+                        "value": "manually"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ffd61f77f556",
+                    "label": "State",
+                    "name": "state",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Alabama": "Alabama",
+                        "Alaska": "Alaska",
+                        "Arizona": "Arizona",
+                        "Arkansas": "Arkansas",
+                        "California": "California",
+                        "Colorado": "Colorado",
+                        "Connecticut": "Connecticut",
+                        "Delaware": "Delaware",
+                        "Florida": "Florida",
+                        "Georgia": "Georgia",
+                        "Hawaii": "Hawaii",
+                        "Idaho": "Idaho",
+                        "Illinois": "Illinois",
+                        "Indiana": "Indiana",
+                        "Iowa": "Iowa",
+                        "Kansas": "Kansas",
+                        "Kentucky": "Kentucky",
+                        "Louisiana": "Louisiana",
+                        "Maine": "Maine",
+                        "Maryland": "Maryland",
+                        "Massachusetts": "Massachusetts",
+                        "Michigan": "Michigan",
+                        "Minnesota": "Minnesota",
+                        "Mississippi": "Mississippi",
+                        "Missouri": "Missouri",
+                        "Montana": "Montana",
+                        "Nebraska": "Nebraska",
+                        "Nevada": "Nevada",
+                        "New Hampshire": "New Hampshire",
+                        "New Jersey": "New Jersey",
+                        "New Mexico": "New Mexico",
+                        "New York": "New York",
+                        "North Carolina": "North Carolina",
+                        "North Dakota": "North Dakota",
+                        "Ohio": "Ohio",
+                        "Oklahoma": "Oklahoma",
+                        "Oregon": "Oregon",
+                        "Pennsylvania": "Pennsylvania",
+                        "Rhode Island": "Rhode Island",
+                        "South Carolina": "South Carolina",
+                        "South Dakota": "South Dakota",
+                        "Tennessee": "Tennessee",
+                        "Texas": "Texas",
+                        "Utah": "Utah",
+                        "Vermont": "Vermont",
+                        "Virginia": "Virginia",
+                        "Washington": "Washington",
+                        "West Virginia": "West Virginia",
+                        "Wisconsin": "Wisconsin",
+                        "Wyoming": "Wyoming"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ffd62af7f557",
+                    "label": "Utility Partners",
+                    "name": "utility_partners",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ffd60c427826",
+                            "label": "Utility Partner Name",
+                            "name": "utility_partner_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ffd60d227827",
+                            "label": "Utility Partner Link",
+                            "name": "utility_partner_link",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "\/enroll-step-2\/?utility=",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5ffd656f3cec1",
+            "label": "Utility Partners",
+            "name": "utility_partners",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ffd606a27824",
+                        "operator": "==",
+                        "value": "automatic"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 3,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ffd60eb27828",
+                    "label": "Select State",
+                    "name": "select_state",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ffd606a27824",
+                                "operator": "==",
+                                "value": "automatic"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Ohio": "Ohio",
+                        "Michigan": "Michigan",
+                        "Pennsylvania": "Pennsylvania"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ffd610e27829",
+                    "label": "Utility Display Limit",
+                    "name": "utility_display_limit",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ffd606a27824",
+                                "operator": "==",
+                                "value": "automatic"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 5,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/utility-partners"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1610444219
+}

@@ -1,0 +1,13 @@
+.lead-paragraph-container {
+	.section-heading {
+		h2 {
+			margin-bottom: 24px;
+		}
+		p {
+			margin: 0 auto 25px auto;
+			&:last-child {
+				margin-bottom: 48px;
+			}
+		}
+	}
+}

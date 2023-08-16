@@ -1,0 +1,49 @@
+.multiple-reviews-container {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	.owl-stage {
+		padding-left: 0 !important;
+	}
+}
+
+.single-review {
+	width: 31%;
+	margin-right: 3%;
+	padding: 62px 48px 90px 48px;
+	text-align: left;
+	background-color: map-get($map: $colors, $key: green06);
+	vertical-align: top;
+	display: inline-block;
+	.rating-star {
+		margin-bottom: 6px;
+		span {
+			display: inline-block;
+			img {
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+	.review-title {
+		h3 {
+			@include font(ftpro, med);
+			margin-bottom: 24px;
+		}
+	}
+	.review-desc {
+		p {
+			font-size: 16px;
+			line-height: 28px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.testimonial-author {
+	@include font(ftpro, med);
+	color: map-get($map: $colors, $key: black);
+	font-size: 20px;
+	line-height: 28px;
+}

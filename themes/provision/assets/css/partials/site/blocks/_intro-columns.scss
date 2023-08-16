@@ -1,0 +1,41 @@
+.intro-columns-container{
+	position: relative;
+	width: 100%;
+	.section-heading{
+		padding-right: 100px;
+		margin-bottom: 7.2rem;
+		h2{
+			margin-bottom: 24px;
+		}
+		p{
+			max-width: 90%;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.single-col-desc{
+		margin-bottom: 48px;
+		.desc-text{
+			p{
+				@include font-size(1.6);
+				max-width: 90%;
+				width: 100%;
+				line-height: 28px;
+			}
+		}
+	}
+}
+.intro-columns-veriation{
+	.section-heading{
+		margin-bottom: 72px;
+		padding-right: 10rem;
+		h2{
+			margin-bottom: 2.4rem;
+		}
+		p{
+			max-width: 90%;
+			width: 100%;
+		}
+	}
+}

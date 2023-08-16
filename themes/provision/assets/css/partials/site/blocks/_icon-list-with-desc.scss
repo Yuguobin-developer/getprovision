@@ -1,0 +1,104 @@
+.icon-lw-desc-container,
+.intro-columns {
+	position: relative;
+	width: 100%;
+	.single-col-desc {
+		width: 31%;
+		float: left;
+		margin-right: 3.5%;
+		&:nth-child(3n + 3) {
+			margin-right: 0;
+		}
+		.desc-title-col {
+			h4 {
+				font-weight: 500;
+				margin-bottom: 8px;
+			}
+		}
+		.desc-col-image {
+			width: 44px;
+			height: 44px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-bottom: 24px;
+		}
+		.desc-text {
+			p {
+				@include font-size(1.8);
+				line-height: 32px;
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+	&.icon-list {
+		.single-col-desc {
+			padding-right: 68px;
+			margin-bottom: 64px;
+			&:nth-last-child(-n + 4) {
+				margin-bottom: 0;
+			}
+			.desc-col-image {
+				margin-bottom: 16px;
+			}
+			.desc-title-col {
+				h5 {
+					@include font-size(2);
+					line-height: 30px;
+					color: map-get($map: $colors, $key: black);
+					margin-bottom: 0;
+					@include font(ftpro, med);
+				}
+			}
+		}
+	}
+	&.four-columns {
+		.single-col-desc {
+			width: 22.4%;
+			margin-right: 3.4%;
+			margin-bottom: 4.8rem;
+			&:nth-child(4n + 4) {
+				margin-right: 0;
+			}
+			.desc-col-count {
+				position: relative;
+				border: 2px solid map-get($map: $colors, $key: black);
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				margin-bottom: 28px;
+				span {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+					height: 28px;
+					width: 10px;
+					color: map-get($map: $colors, $key: black);
+					@include font(ftpro, havy);
+					@include font-size(1.8);
+					line-height: 28px;
+				}
+			}
+			.desc-text {
+				p {
+					font-size: 16px;
+					line-height: 28px;
+				}
+			}
+		}
+	}
+}
+.icon-list-container {
+	.section-heading {
+		h2 {
+			margin-bottom: 48px;
+		}
+	}
+}
+.icon-lw-desc-container .single-col-desc .desc-text p {
+	padding-right: 15px;
+}

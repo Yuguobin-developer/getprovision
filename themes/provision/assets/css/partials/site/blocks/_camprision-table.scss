@@ -1,0 +1,63 @@
+.camprision-table-container {
+	position: relative;
+	width: 100%;
+	h2 {
+		margin-bottom: 72px;
+	}
+}
+.comparison-table {
+	.title-head-row {
+		.single-head {
+			width: 31%;
+			vertical-align: middle;
+			float: left;
+			max-width: 360px;
+			margin-right: 3.5%;
+			padding: 22px 0;
+			border-radius: 100px;
+			line-height: 1;
+			span {
+				font-size: 24px;
+				line-height: 36px;
+				@include font(ftpro, med);
+				color: map-get($map: $colors, $key: black);
+			}
+
+			&.green-bg {
+				padding-bottom: 17px !important;
+			}
+			&:nth-child(3n + 3) {
+				margin-right: 0;
+			}
+			&.green-bg {
+				background-color: map-get($map: $colors, $key: green06);
+			}
+			&.off-white {
+				background-color: map-get($map: $colors, $key: black03);
+			}
+		}
+	}
+	.content-row {
+		border-bottom: 2px solid map-get($map: $colors, $key: black03);
+		padding: 38px 0;
+		.content-row-widget {
+			width: 31.7%;
+			max-width: 360px;
+			float: left;
+			margin-right: 4.9%;
+			font-size: 20px;
+			line-height: 30px;
+			@include font(ftpro, med);
+			color: map-get($map: $colors, $key: black);
+			&:nth-child(3n + 3) {
+				margin-right: 0;
+			}
+			p {
+				margin-bottom: 0;
+			}
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}

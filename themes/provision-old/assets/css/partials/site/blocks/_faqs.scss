@@ -1,0 +1,155 @@
+.faqs-area {
+	padding-top: 1.2rem;
+}
+
+.faq-block {
+	box-sizing: border-box;
+	padding: 15.6rem 0 24.4rem;
+	background-image: url(../img/state-cta-stroke.png);
+	background-size: contain;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	h2 {
+		text-align: center;
+		span {
+			display: block;
+			@include font(ftpro, med);
+		}
+	}
+}
+
+.faq {
+	a,
+	a:visited {
+		border: none;
+		border-top: 1px solid rgba(16, 16, 16, 0.1);
+		display: block;
+		padding: 3rem 10rem 3rem 0;
+		font-size: 24px;
+		color: map-get($colors, black);
+		@include font(ftpro, havy);
+		position: relative;
+		cursor: pointer;
+		position: relative;
+
+		&:after {
+			content: "";
+			background-image: url(../img/plus-icon-green.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			right: 2px;
+			top: 38px;
+			display: block;
+			height: 20px;
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
+			width: 20px;
+		}
+		&:hover {
+			color: map-get($colors, black);
+		}
+
+		&.active {
+			color: map-get($colors, black);
+
+			&:hover {
+				background-color: transparent;
+			}
+
+			&:after {
+				transform: rotate(45deg);
+			}
+		}
+
+		&:last-child {
+			border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+		}
+	}
+}
+
+.faq-content {
+	display: none;
+	border-top: 0;
+	color: #999;
+	font-size: 18px;
+	font-size: 1.8rem;
+	padding: 0 0 1.2rem 0;
+	position: relative;
+	top: -18px;
+
+	p {
+		margin-bottom: 25px;
+		color: map-get($colors, black70);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.page-content {
+	.faq {
+		a:visited {
+			color: map-get($map: $colors, $key: black70);
+		}
+		a:hover {
+			border-color: rgba(16, 16, 16, 0.1);
+		}
+	}
+}
+
+.faq-variation {
+	.faq-block {
+		max-width: 960px;
+		width: 90%;
+		margin: 0 auto;
+		background-image: none;
+		background-color: #fff;
+		position: relative;
+		z-index: 1;
+		padding-top: 0;
+		padding-bottom: 14.4rem;
+		&::before {
+			position: absolute;
+			content: " ";
+			background-image: url(../img/faq-stroke.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			z-index: -1;
+			width: 100%;
+			height: 385px;
+			bottom: 0;
+		}
+	}
+	.faqs-area {
+		max-width: 660px;
+		margin: 0 auto;
+	}
+	.faq {
+		a,
+		a:visited {
+			&:after {
+				content: "";
+				background-image: url(../img/plus-icon-red.svg);
+				top: 36px;
+				height: 24px;
+				width: 24px;
+			}
+		}
+	}
+	&.faq-variation-2 {
+		.faq-block {
+			padding: 15.6rem 0 0 0;
+			background-image: url(../img/faqs-top-stroke.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			&::before {
+				display: none;
+			}
+		}
+	}
+}

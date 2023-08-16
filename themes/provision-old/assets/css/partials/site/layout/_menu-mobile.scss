@@ -1,0 +1,379 @@
+@media (max-width: 1199px) {
+	.search-area {
+		display: none;
+	}
+	header {
+		&.shrink {
+			padding-bottom: 1.5rem;
+			.logo {
+				margin-top: 2rem;
+			}
+			.header-btns {
+				margin-top: 2rem;
+			}
+			.login-icon {
+				margin-top: 2.6rem;
+			}
+		}
+	}
+	header.step-header {
+		.login-icon {
+			margin-right: 0;
+		}
+	}
+
+	.main-menu {
+		width: 100%;
+		text-align: left;
+		position: initial;
+	}
+
+	.header-btns {
+		float: none;
+		margin-top: 0;
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+
+	.right-header,
+	.left-header {
+		width: 100%;
+		float: none;
+	}
+
+	.logo {
+		width: 168px;
+		margin-top: 26px;
+	}
+
+	.login-icon {
+		width: 45px;
+		margin: 3.3rem 0 0 0;
+		transition: all 0.3s ease-in-out;
+		right: calc(2.5% + 38px);
+	}
+
+	.menu-overlay .main-menu {
+		ul {
+			margin: 0;
+			padding: 0;
+			background: transparent;
+			width: 100%;
+
+			li {
+				margin: 0;
+				position: relative;
+				display: block;
+				opacity: 1;
+				text-align: center;
+				padding-right: 0 !important;
+				margin-bottom: 3rem;
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				a,
+				a:visited {
+					color: map-get($colors, white);
+					font-size: 28px;
+					padding: 0;
+					line-height: 42px;
+					display: inline-block;
+					border-bottom: none;
+					position: relative;
+				}
+
+				&.current-menu-item a,
+				&.current-menu-parent a,
+				a:hover {
+					border-bottom: none;
+				}
+			}
+
+			ul {
+				display: none;
+				padding: 2rem 2.5rem;
+				margin-bottom: 3rem;
+				position: relative;
+				top: 1rem;
+				left: initial;
+				opacity: initial;
+				visibility: initial;
+				overflow: visible;
+				background-color: map-get($map: $colors, $key: white);
+				border-radius: 0;
+				transition: none;
+
+				li {
+					padding: 0;
+					max-width: 375px;
+					width: 100%;
+					margin: 0 auto 16px auto;
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					a,
+					a:visited {
+						line-height: 28px;
+						font-size: 18px;
+						color: map-get($map: $colors, $key: black);
+						padding: 0;
+						text-transform: inherit;
+					}
+
+					a:hover {
+						color: map-get($map: $colors, $key: teal);
+					}
+
+					&.current-menu-item > a,
+					&.current-menu-parent > a {
+						color: map-get($map: $colors, $key: green);
+					}
+				}
+			}
+		}
+	}
+
+	.menu-overlay {
+		position: fixed;
+		background: map-get($colors, bgreen);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		visibility: hidden;
+		overflow: visible;
+		box-sizing: border-box;
+		z-index: 99990;
+		@include transition(all, 0.3s, ease-in-out);
+	}
+
+	.menu-overlay.open {
+		opacity: 1;
+		visibility: visible;
+		overflow: visible;
+		.main-menu ul li a:before,
+		.main-menu ul li a:visited:before {
+			display: none;
+		}
+		.main-menu ul ul:before {
+			display: none;
+		}
+		.main-menu ul li {
+			&.active {
+				.submenu-icon {
+					background: url(../img/mobile-u-arrow.svg) no-repeat right center;
+				}
+			}
+		}
+		.header-btns {
+			.login-icon,
+			a.button {
+				display: none;
+			}
+		}
+	}
+	header.shrink {
+		.menu-overlay.open {
+			.main-menu ul li {
+				a,
+				a:visited {
+					padding: 0;
+				}
+			}
+		}
+	}
+	header .menu-container {
+		padding: 95px 0 1rem 0;
+		opacity: 0;
+		height: 100%;
+		@include transition(all, 0.4s, ease-in-out);
+		transition-delay: 0.25s;
+		box-sizing: border-box;
+	}
+
+	header .menu-overlay.open .menu-container {
+		opacity: 1;
+		padding: 15rem 0 1rem 0;
+	}
+
+	header.shrink .menu-container {
+		padding: 15rem 0 1rem 0;
+	}
+
+	header.shrink .menu-overlay.open .menu-container {
+		opacity: 1;
+		padding: 15rem 0 1rem 0;
+	}
+
+	.menu-content {
+		height: 100%;
+		max-height: 100%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		padding-right: 0;
+		padding-left: 0;
+		box-sizing: border-box;
+	}
+	.header-btns {
+		float: none;
+		width: 100%;
+		text-align: center;
+		display: block;
+		opacity: 0;
+		@include transition(all, 0.55s, ease-in-out);
+		transition-delay: 0.4s;
+		padding-top: 10px;
+	}
+
+	.menu-overlay.open .header-btns {
+		opacity: 1;
+		padding-top: 0px;
+	}
+
+	.menu-btn {
+		display: block;
+		position: fixed;
+		top: 32px;
+		right: 2.5%;
+		height: 30px;
+		width: 30px;
+		cursor: pointer;
+		z-index: 99999;
+		@include transition(all, 0.3s, ease-in-out);
+	}
+
+	header.shrink .menu-btn {
+		top: 26px;
+	}
+
+	.menu-btn.active .top {
+		-webkit-transform: translateY(8px) translateX(0) rotate(-45deg);
+		transform: translateY(8px) translateX(0) rotate(-45deg);
+		background: map-get($colors, white);
+		@include transition(all, 0.3s, ease-in-out);
+	}
+
+	.menu-btn.active .middle {
+		opacity: 0;
+		background: map-get($colors, white);
+	}
+
+	.menu-btn.active .bottom {
+		-webkit-transform: translateY(-11px) translateX(0) rotate(45deg);
+		transform: translateY(-11px) translateX(0) rotate(45deg);
+		background: map-get($colors, white);
+		@include transition(all, 0.3s, ease-in-out);
+	}
+
+	.menu-btn span {
+		background: map-get($colors, bgreen);
+		border: none;
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		top: 4px;
+		left: 0;
+		cursor: pointer;
+		@include transition(all, 0.3s, ease-in-out);
+	}
+
+	.menu-btn.active span {
+		left: 3px;
+	}
+
+	.menu-btn span:nth-of-type(2) {
+		top: 13px;
+	}
+
+	.menu-btn span:nth-of-type(3) {
+		top: 23px;
+	}
+
+	li.menu-item-has-children .submenu-icon {
+		position: absolute;
+		z-index: 99999;
+		display: inline-block;
+		height: 42px;
+		width: 190px;
+		left: 10px;
+		right: 0;
+		margin: auto;
+		cursor: pointer;
+		background: url(../img/mobile-d-arrow.svg) no-repeat right center;
+	}
+
+	li.menu-item-has-children.active > .submenu-icon:before {
+		height: 0;
+		top: 18px;
+	}
+	.login-icon.desktop-hide,
+	.mobile-widget.desktop-hide {
+		display: block !important;
+	}
+}
+.no-overflow {
+	.login-icon {
+		display: none !important;
+	}
+}
+.logged-in.admin-bar header .menu-btn {
+	top: 64px;
+}
+
+.logged-in.admin-bar header.shrink .menu-btn {
+	top: 57px;
+}
+
+.no-overflow .logged-in.admin-bar .left-header {
+	top: 32px;
+}
+
+.no-overflow .logged-in.admin-bar .menu-overlay {
+	top: 32px;
+	height: calc(100vh - 32px);
+}
+.logged-in.admin-bar {
+	header {
+		top: 32px;
+	}
+}
+@media only screen and (min-width: 783px) and (max-width: 1199px) {
+	.logged-in.admin-bar header {
+		top: 26px;
+	}
+	.logged-in.admin-bar header .menu-btn {
+		top: 59px;
+	}
+	.logged-in.admin-bar header.shrink .menu-btn {
+		top: 52px;
+	}
+}
+@media (max-width: 782px) {
+	.logged-in.admin-bar header {
+		top: 38px;
+	}
+	.logged-in.admin-bar header .menu-btn {
+		top: 72px;
+	}
+
+	.logged-in.admin-bar header.shrink .menu-btn {
+		top: 64px;
+	}
+
+	.no-overflow .logged-in.admin-bar .left-header {
+		top: 46px;
+	}
+
+	.no-overflow .logged-in.admin-bar .menu-overlay {
+		top: 46px;
+		height: calc(100vh - 46px);
+	}
+
+	#wpadminbar {
+		position: fixed !important;
+	}
+}

@@ -1,0 +1,55 @@
+{
+    "key": "group_5faa7431db718",
+    "title": "Block - Glide Spacer",
+    "fields": [
+        {
+            "key": "field_5faa74993c164",
+            "label": "Spcaer Size",
+            "name": "blok_spcr_spcaer_size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "space-xl": "XL (38px)",
+                "space-xl2": "XL-2 (48px)",
+                "space-xl3": "XL-3 (72px)",
+                "space-xxl": "XXL (96px)",
+                "space-xxl2": "XXL-2 (128px)",
+                "space-xxl3": "XXL-3 (156px)",
+                "space-xxl4": "XXL-4 (200px)",
+                "space-xxl5": "XXL-5 (220px)"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/spacer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1606144272
+}

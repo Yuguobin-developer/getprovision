@@ -1,0 +1,45 @@
+.contact-info-container {
+	position: relative;
+	width: 100%;
+	h2 {
+		margin-bottom: 48px;
+	}
+}
+.contact-info-widgets {
+	width: 100%;
+	.contact-widget {
+		width: 31%;
+		margin-right: 3.5%;
+		float: left;
+		&:nth-child(3n + 3) {
+			margin-right: 0;
+		}
+		.icon-w-title {
+			margin-bottom: 20px;
+			.contact-icon {
+				width: 44px;
+				height: 44px;
+				margin-right: 16px;
+			}
+			.contact-title {
+				h6 {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.cell-and-time {
+			font-size: 18px;
+			line-height: 32px;
+			@include font(open, reg);
+			color: map-get($map: $colors, $key: black70);
+			h4 {
+				margin-bottom: 0;
+			}
+			a,
+			a:visited {
+				color: map-get($map: $colors, $key: black70);
+				border-bottom: none;
+			}
+		}
+	}
+}

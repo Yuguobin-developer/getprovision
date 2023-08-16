@@ -1,0 +1,74 @@
+.team-member-container {
+	h2 {
+		margin-bottom: 38px;
+	}
+}
+.team-members {
+	position: relative;
+	width: 100%;
+	.single-member {
+		width: 31%;
+		float: left;
+		margin-right: 3.5%;
+		margin-bottom: 3.8rem;
+		.inner-content-member {
+			position: relative;
+		}
+		&:nth-child(3n + 3) {
+			margin-right: 0;
+		}
+		&:nth-last-child(-n + 4) {
+			margin-bottom: 0;
+		}
+		.member-image {
+			width: 100%;
+			height: 360px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			border-radius: 0 44px 0 0;
+		}
+		.member-info {
+			&:hover {
+				span.button-arrow {
+					color: map-get($map: $colors, $key: teal);
+					background-image: url(../img/next-arrow-hover.svg);
+				}
+			}
+			width: 88%;
+			padding: 22px 30px 20px 30px;
+			margin: auto;
+			background-color: map-get($map: $colors, $key: white);
+			border-radius: 16px;
+			position: relative;
+			margin-top: -50px;
+			box-shadow: 0px 6px 18px rgba(44, 82, 78, 0.1);
+			h4 {
+				margin-bottom: 0px;
+			}
+			h6 {
+				margin-bottom: 0;
+				color: map-get($map: $colors, $key: black50);
+			}
+			.member-more-info {
+				line-height: 18px;
+				margin-top: 16px;
+				.button-arrow {
+					color: map-get($map: $colors, $key: black);
+					font-size: 16px;
+					line-height: 18px;
+					position: relative;
+					padding-right: 30px;
+					@include font(ftpro, havy);
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+					display: inline-block;
+					background-image: url(../img/green-arrow.svg);
+					background-repeat: no-repeat;
+					background-position: right center;
+					transition: all 0.4s ease-in-out;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.logo-list-container {
+	padding: 38px 0;
+	border-top: 1px solid map-get($map: $colors, $key: black10);
+	.single-logo-list {
+		width: 20%;
+		float: left;
+		padding: 26px 16px;
+		img {
+			line-height: 100px;
+		}
+	}
+}
+.partner-list-container {
+	h2 {
+		margin-bottom: 48px;
+	}
+	.partner-list {
+		margin-bottom: 48px;
+		h4 {
+			margin-bottom: 20px;
+		}
+		.partner-logo-widget {
+			width: 22.3%;
+			float: left;
+			margin-right: 3.6%;
+			margin-bottom: 24px;
+			display: table;
+			background-color: map-get($map: $colors, $key: white);
+			@include border-radius(8px);
+			a,
+			a:visited {
+				@include border-radius(8px);
+				height: 108px;
+				display: table-cell;
+				vertical-align: middle;
+				box-shadow: 0px 4px 16px -4px rgba(0, 129, 116, 0.2);
+				border: none;
+				&:hover {
+					box-shadow: 0px 12px 32px rgba(0, 129, 116, 0.15);
+				}
+			}
+			&:nth-child(5n + 5) {
+				margin-right: 0;
+			}
+			span {
+				display: block;
+				max-height: 70px;
+				line-height: 1;
+				img {
+					max-height: 55px;
+					width: auto;
+				}
+			}
+		}
+	}
+}

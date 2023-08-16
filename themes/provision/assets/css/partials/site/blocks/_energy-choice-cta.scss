@@ -1,0 +1,147 @@
+.block-head {
+	max-width: 530px;
+	margin: 0 auto;
+}
+#lottie {
+	line-height: 1;
+	margin-top: 4.8rem;
+}
+.state-menu {
+	max-width: 360px;
+	margin: 7.2rem auto 0 auto;
+}
+.select-state {
+	@include font(ftpro, havy);
+	color: map-get($map: $colors, $key: black);
+	line-height: 30px;
+	margin-bottom: 2rem;
+}
+.dropdown dd,
+dl.dropdown,
+.dropdown dt,
+.dropdown ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+.state-menu {
+	li {
+		display: block;
+		margin: 0 0 20px 0 !important;
+		padding: 0 !important;
+		&:before {
+			display: none !important;
+		}
+		&:last-child {
+			margin: 0 !important;
+		}
+
+		a,
+		a:visited {
+			font-size: 18px;
+			padding: 0 !important;
+			display: table;
+			width: 100%;
+			line-height: 28px;
+			box-sizing: border-box;
+			border: none !important;
+			position: relative;
+			@include font(ftpro, havy);
+			color: map-get($colors, black);
+			@include transition(all, 0.3s, ease-in-out);
+			span {
+				display: table-cell;
+				vertical-align: middle;
+				line-height: 1;
+				&:nth-child(2) {
+					padding-left: 20px;
+				}
+				img {
+					max-height: 36px;
+				}
+			}
+			&:before {
+				display: none;
+			}
+		}
+
+		a:hover {
+			color: map-get($map: $colors, $key: teal);
+		}
+	}
+	select {
+		border: 2px solid map-get($map: $colors, $key: bgreen);
+		@include border-radius(100px);
+		color: map-get($map: $colors, $key: black);
+		@include font(ftpro, havy);
+		letter-spacing: 1px;
+		line-height: 1;
+		text-transform: uppercase;
+		font-size: 1.8rem;
+		padding: 21px 0 19px 32px;
+		height: 62px;
+		option {
+			text-transform: capitalize;
+		}
+	}
+}
+.dropdown dt,
+.dropdown ul {
+	margin: 0px;
+	padding: 0px;
+}
+.dropdown dd {
+	position: relative;
+}
+.dropdown dt {
+	a,
+	a:visited {
+		background: url(../img/dropdown-select.svg) no-repeat right 20px center;
+		padding: 21px 0 19px 32px;
+		display: inline-block;
+		text-decoration: none;
+		border: 2px solid map-get($map: $colors, $key: bgreen);
+		@include border-radius(100px);
+		text-align: left;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		width: 360px;
+		color: map-get($map: $colors, $key: black);
+		@include font(ftpro, havy);
+		letter-spacing: 1px;
+		line-height: 1;
+		&:hover {
+			border: 2px solid map-get($map: $colors, $key: teal);
+			color: map-get($map: $colors, $key: black);
+		}
+		span {
+			display: table-cell;
+			vertical-align: middle;
+			line-height: 1;
+			&.menu-img {
+				width: 16px;
+				text-align: center;
+				line-height: 0.7;
+			}
+			&:nth-child(2) {
+				padding-left: 20px;
+			}
+		}
+	}
+}
+
+.state-menu-container {
+	width: 360px;
+	display: none;
+	position: absolute;
+	box-shadow: 0px 12px 36px rgba(16, 16, 16, 0.1);
+	padding: 24px;
+	@include border-radius(12px);
+	left: calc(50% - 180px);
+	background-color: map-get($map: $colors, $key: white);
+	top: 5px;
+	z-index: 1;
+}
+.dropdown span.value {
+	display: none;
+}

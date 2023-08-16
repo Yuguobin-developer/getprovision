@@ -1,0 +1,64 @@
+.iat-image-area {
+	width: 48.28%;
+	position: relative;
+}
+.iat-image {
+	text-align: center;
+	img {
+		@include border-radius(230px 230px 230px 0);
+		background-image: -webkit-linear-gradient(180deg, rgba(163, 220, 190, 0.13) 0%, rgba(68, 192, 187, 0.13) 100%);
+		padding: 25px;
+	}
+}
+.iat-image-caption {
+	position: absolute;
+	bottom: -32px;
+	left: -21px;
+	width: 260px;
+	height: 260px;
+	background-image: url(../img/warm-gradient.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include border-radius(300px 300px 300px 0);
+	padding: 7.3rem 0;
+	text-align: center;
+}
+.iat-caption-icon {
+	line-height: 0.7;
+	margin-bottom: 16px;
+}
+.iat-caption-title {
+	@include font(ftpro, med);
+	line-height: 30px;
+	color: map-get($map: $colors, $key: black);
+	max-width: 185px;
+	margin: 0 auto;
+}
+.iat-content-area {
+	width: 48.28%;
+	margin-left: 40px;
+}
+.iat-iocns-container {
+	margin-bottom: 4.2rem;
+}
+.iat-icon-column {
+	float: left;
+	width: 28.66%;
+	margin: 0 7% 3rem 0;
+	&:nth-child(3n + 3) {
+		margin-right: 0;
+	}
+	span {
+		@include font(ftpro, med);
+		display: block;
+		line-height: 30px;
+		color: map-get($map: $colors, $key: black);
+	}
+}
+.iat-icon {
+	width: 44px;
+	height: 44px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 2.4rem;
+}
